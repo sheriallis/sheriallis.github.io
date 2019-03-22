@@ -413,27 +413,35 @@ p {
   background-image: url(../images/header-bg.jpg);
   background-size: cover;
 }
-.header .container {
-  flex-direction: row;
-  justify-content: space-between;
-}
 .header nav {
   display: flex;
   justify-content: space-between;
   font-size: 1.5rem;
-  width: 60%;
+}
+.header nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding-bottom: 0.8em;
 }
 .header nav ul li {
   display: inline-block;
-  padding-left: 1em;
+  margin-right: 1em;
+  background: #4847A0;
+  padding: 0.5em 0.8em;
+  border-radius: 10px;
+}
+.header nav ul li:hover {
+  background: #F46778;
 }
 
 .hero-text {
   width: 60%;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 .hero-text p {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+  margin-bottom: 80px;
 }
 
 .mockup-img {
@@ -446,6 +454,10 @@ p {
   height: 150px;
   border-radius: 50%;
   border: 2px solid white;
+}
+
+h1 {
+  margin-bottom: 0;
 }
 
 .portfolio-item {
