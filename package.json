@@ -1,0 +1,29 @@
+{
+  "name": "sheriallis.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheriallis/sheriallis.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheriallis/sheriallis.github.io/issues"
+  },
+  "homepage": "https://github.com/sheriallis/sheriallis.github.io#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.5.0",
+    "postcss-modules": "^1.4.1"
+  }
+}
