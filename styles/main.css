@@ -357,6 +357,14 @@ section .container {
   width: 80%;
   max-width: 1300px;
 }
+@media (max-width: 900px) {
+  section .container {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 
 h2 {
   padding-bottom: 0.8em;
@@ -374,22 +382,21 @@ h1, h2, h3 {
 body {
   font-family: "Karla", sans-serif;
   font-size: 1rem;
-  line-height: 1.2777778rem;
+  line-height: 1.3rem;
 }
 
 h1 {
   font-size: 3rem;
-  line-height: 5.1111111rem;
+  line-height: 5rem;
   margin-top: 1.2777778rem;
   margin-bottom: 2.5555556rem;
 }
 
 h2 {
-  font-size: 2.6111111rem;
+  font-size: 2.5rem;
   line-height: 3.8333333rem;
   margin-top: 1.2777778rem;
   margin-bottom: 1.2777778rem;
-  align-self: flex-start;
 }
 
 h3 {
@@ -446,7 +453,8 @@ p {
 }
 
 .mockup-img {
-  height: 800px;
+  height: 100%;
+  max-height: 800px;
   position: relative;
   top: 75px;
 }
@@ -469,6 +477,12 @@ h1 {
 .portfolio-item .project-info {
   padding-left: 5em;
 }
+@media (max-width: 1260px) {
+  .portfolio-item .project-info {
+    padding-left: 0;
+    margin-top: 24px;
+  }
+}
 .portfolio-item a {
   color: #F96565;
   font-weight: 700;
@@ -483,15 +497,29 @@ h1 {
 .portfolio-item p {
   margin-bottom: 2em;
 }
+@media (max-width: 1260px) {
+  .portfolio-item {
+    flex-direction: column;
+    margin-top: 26px;
+  }
+}
 
 #projects .container {
   flex-direction: column;
 }
+#projects h2 {
+  align-self: flex-start;
+}
 
 .project-preview {
   width: 35vw;
-  max-width: 550px;
+  max-width: 600px;
   box-shadow: -25px 25px 0px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 1260px) {
+  .project-preview {
+    width: 100%;
+  }
 }
 
 #about {
@@ -504,6 +532,14 @@ h1 {
 #about .container {
   flex-direction: row;
 }
+@media (max-width: 900px) {
+  #about .container {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 
 .about-img {
   width: 250px;
@@ -512,6 +548,11 @@ h1 {
 
 .about-info {
   padding: 4em;
+}
+@media (max-width: 900px) {
+  .about-info {
+    padding: 20px;
+  }
 }
 
 #services {
@@ -531,6 +572,12 @@ h1 {
   flex-direction: column;
   align-items: center;
   width: 40%;
+}
+@media (max-width: 900px) {
+  .service-item {
+    margin-bottom: 24px;
+    width: 90%;
+  }
 }
 
 #contact {

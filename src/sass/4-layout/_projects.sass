@@ -7,7 +7,10 @@
   
   .project-info 
     padding-left: 5em
-  
+    @media (max-width: 1260px)
+      padding-left: 0
+      margin-top: 24px
+
   a 
     color: $link-color
     font-weight: 700
@@ -21,13 +24,21 @@
   p 
     margin-bottom: 2em
   
+  @media (max-width: 1260px)
+    flex-direction: column
+    margin-top: 26px
 
 #projects
   .container
     flex-direction: column
 
+  h2
+    align-self: flex-start
 
 .project-preview 
   width: 35vw
-  max-width: 550px
+  max-width: 600px
   box-shadow: -25px 25px 0px rgba(0,0,0, .05)
+
+  @media (max-width: 1260px)
+    width: 100%
