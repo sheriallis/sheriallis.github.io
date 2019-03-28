@@ -533,4 +533,37 @@ h1 {
   width: 40%;
 }
 
+#contact {
+  background: #fdfbfb;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+#contact h2 {
+  align-self: center;
+}
+#contact .container {
+  flex-direction: column;
+}
+#contact label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#contact input[type=text], #contact select, #contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 26px;
+  resize: vertical;
+}
+#contact input[type=submit] {
+  background-color: #4847A0;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+#contact input[type=submit]:hover {
+  background-color: #F46778;
+}
+
 /*# sourceMappingURL=main.css.map */
