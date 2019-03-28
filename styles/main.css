@@ -354,6 +354,7 @@ section .container {
   align-items: center;
   margin-bottom: 4em;
   margin-top: 4em;
+  width: 80%;
   max-width: 1300px;
 }
 
@@ -488,7 +489,8 @@ h1 {
 }
 
 .project-preview {
-  width: 500px;
+  width: 35vw;
+  max-width: 550px;
   box-shadow: -25px 25px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -509,8 +511,21 @@ h1 {
 }
 
 .about-info {
-  padding: 2.6em;
-  padding-left: 5em;
+  padding: 4em;
+}
+
+#services {
+  display: flex;
+}
+#services .container {
+  justify-content: space-around;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
 }
 
 /*# sourceMappingURL=main.css.map */
