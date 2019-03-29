@@ -372,7 +372,6 @@ h2 {
 
 html, .root {
   font-size: 18px;
-  line-height: 23px;
 }
 
 h1, h2, h3 {
@@ -390,6 +389,11 @@ h1 {
   line-height: 5rem;
   margin-top: 1.2777778rem;
   margin-bottom: 2.5555556rem;
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 h2 {
@@ -415,16 +419,29 @@ p {
 }
 
 .header {
-  height: 65vh;
+  height: 800px;
   color: #FFFFFF;
   background-color: #4847A0;
   background-image: url(../images/header-bg.jpg);
   background-size: cover;
 }
+@media (max-width: 920px) {
+  .header {
+    height: 100%;
+  }
+}
+.header .container {
+  margin-top: 2em;
+}
+@media (max-width: 1260px) {
+  .header {
+    overflow: hidden;
+  }
+}
 .header nav {
   display: flex;
   justify-content: space-between;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 .header nav a {
   text-decoration: none;
@@ -432,31 +449,61 @@ p {
   font-weight: 700;
   padding-bottom: 0.8em;
 }
+.header nav ul {
+  margin: 0;
+  width: 100%;
+}
 .header nav ul li {
   display: inline-block;
-  margin-right: 1em;
+  margin: 12px;
   background: #4847A0;
-  padding: 0.5em 0.8em;
+  padding: 0.3em 0.8em;
   border-radius: 10px;
 }
 .header nav ul li:hover {
-  background: #F46778;
+  background: black;
 }
 
 .hero-text {
   width: 60%;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
+@media (max-width: 920px) {
+  .hero-text {
+    width: 90%;
+  }
+}
 .hero-text p {
   font-size: 1.3rem;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1200px) {
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 920px) {
+  .hero-text p {
+    margin-bottom: 30px;
+  }
 }
 
 .mockup-img {
-  height: 100%;
   max-height: 800px;
   position: relative;
-  top: 75px;
+  top: 65px;
+}
+@media (max-width: 1350px) {
+  .mockup-img {
+    top: 30px;
+    right: -400px;
+    margin-left: -400px;
+  }
+}
+@media (max-width: 920px) {
+  .mockup-img {
+    display: none;
+  }
 }
 
 .header-profile-img {
