@@ -8,47 +8,60 @@
       href="https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:500"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/main.css" />
     <title>Sheri Richardson: Front End Development and Web Design</title>
   </head>
   <body>
+    <header>
+      <div class="container">
+        <img src="images/logo.svg" class="logo" />
+        <nav>
+          <ul>
+            <li><a data-scroll href="#projects">Projects</a></li>
+            <li><a data-scroll href="#about">About</a></li>
+            <li><a data-scroll href="#services">Services</a></li>
+            <li><a data-scroll href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <section class="hero">
       <div class="container">
-        <div class="hero-text">
+        <div class="hero__text" data-aos="zoom-in" data-aos-duration="1000">
           <img
             src="images/header-profile-img.png"
             alt=""
-            class="header-profile-img"
+            class="hero__img--profile"
           />
-          <h1>Hi, I'm Sheri Richardson</h1>
+          <h1>Hi, I'm Sheriallis Richardson</h1>
           <p>
             Hi, my name is Sheriallis. I am a front end developer with a love
             for design based in The Netherlands. These are my projects.
           </p>
-          <nav>
-            <ul>
-              <li><a data-scroll href="#projects">Projects</a></li>
-              <li><a data-scroll href="#about">About</a></li>
-              <li><a data-scroll href="#services">Services</a></li>
-              <li><a data-scroll href="#contact">Contact</a></li>
-            </ul>
-          </nav>
         </div>
         <div>
-          <img src="images/header-mockup.png" alt="" class="mockup-img" />
+          <img
+            src="images/header-mockup.png"
+            alt=""
+            class="hero__img--mockup"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          />
         </div>
       </div>
     </section>
     <section id="projects">
       <div class="container">
         <h2>Projects</h2>
-        <div class="portfolio-item">
+        <div class="project">
           <div></div>
           <img
             src="images/projects/markdown-previewer.png"
-            class="project-preview"
+            class="project__preview"
+            data-aos="fade-up"
           />
-          <div class="project-info">
+          <div class="project__info">
             <h3>Markdown Previewer</h3>
             <p>
               Markdown Previewer created for freeCodeCamp's front end libraries
@@ -64,14 +77,15 @@
           </div>
         </div>
 
-        <div class="portfolio-item">
+        <div class="project">
           <div>
             <img
               src="images/projects/weather-app.png"
-              class="project-preview"
+              class="project__preview"
+              data-aos="fade-up"
             />
           </div>
-          <div class="project-info">
+          <div class="project__info">
             <h3>Weather App</h3>
             <p>
               Weather app built using React and the Apixu API.
@@ -87,7 +101,7 @@
 
     <section id="about">
       <div class="container">
-        <div class="about-info">
+        <div class="about__info">
           <h2>About</h2>
           <p>
             As a Front-end developer with an eye for design I'm always looking
@@ -97,19 +111,25 @@
           </p>
         </div>
         <div>
-          <img src="https://i.imgur.com/nFdvIXU.png" class="about-img" alt="" />
+          <img
+            src="https://i.imgur.com/nFdvIXU.png"
+            class="about__img"
+            alt=""
+          />
         </div>
       </div>
     </section>
     <section id="services">
       <h2>Services</h2>
       <div class="container">
-        <div class="service-item">
+        <div class="service__item">
           <img
             src="images/services-webdesign.svg"
             alt=""
             width="200px"
             height="200px"
+            data-aos="fade-right"
+            data-aos-duration="3000"
           />
           <h3>Web Design</h3>
           <!-- <p>
@@ -118,12 +138,14 @@
             minus
           </p> -->
         </div>
-        <div class="service-item">
+        <div class="service__item">
           <img
             src="images/services-front-end-dev.svg"
             alt=""
             width="200px"
             height="200px"
+            data-aos="fade-left"
+            data-aos-duration="3000"
           />
           <h3>Front End Development</h3>
           <!-- <p>
@@ -162,9 +184,11 @@
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
       var scroll = new SmoothScroll('a[href*="#"]');
+      AOS.init();
     </script>
   </body>
 </html>
