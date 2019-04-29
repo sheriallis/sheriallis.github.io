@@ -1,16 +1,29 @@
-.portfolio-item 
+#projects
+  .container
+    flex-direction: column
+
+  h2
+    align-self: flex-start
+
+.project
   display: flex
   flex-direction: column
   padding: 1em
   margin-bottom: 3em
-  
-  
-  .project-info 
+
+  &__info
     margin-top: 40px
     width: 80%
     @media (max-width: 1260px)
       padding-left: 0
       margin-top: 24px
+
+  &__preview    
+    max-height: 600px
+    box-shadow: -25px 25px 0px rgba(0,0,0, .05)
+
+    @media (max-width: 1260px)
+      width: 100%
 
   a 
     color: $link-color
@@ -27,17 +40,3 @@
   
   @media (max-width: 1260px)
     margin-top: 26px
-
-#projects
-  .container
-    flex-direction: column
-
-  h2
-    align-self: flex-start
-
-.project-preview 
-  max-height: 600px
-  box-shadow: -25px 25px 0px rgba(0,0,0, .05)
-
-  @media (max-width: 1260px)
-    width: 100%
