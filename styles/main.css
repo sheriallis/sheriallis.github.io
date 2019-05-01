@@ -423,9 +423,19 @@ header {
   font-size: 1.2rem;
   padding: 8px;
 }
+@media (max-width: 600px) {
+  header {
+    display: none;
+  }
+}
 header .logo {
   width: 50px;
   padding: 10px 0px;
+}
+@media (max-width: 600px) {
+  header .logo {
+    display: none;
+  }
 }
 header .container {
   display: flex;
