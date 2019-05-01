@@ -591,7 +591,8 @@ h1 {
   display: flex;
   flex-direction: column;
   color: #FFFFFF;
-  background: #4847A0;
+  background-image: linear-gradient(to right, #4847A0 0%, #F46778 100%);
+  background-color: #4847A0;
 }
 #about .container {
   flex-direction: row;
