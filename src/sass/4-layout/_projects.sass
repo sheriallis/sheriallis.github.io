@@ -8,10 +8,11 @@
 .project
   display: flex
   flex-direction: column
-  margin-bottom: 80px
+  margin-bottom: 40px
+  @media (max-width: 900px)
+    margin-bottom: 0
 
   &__info
-    // margin-top: 40px
     width: 80%
     @media (max-width: 1260px)
       padding-left: 0
@@ -22,26 +23,40 @@
     margin-bottom: 40px
 
     @media (max-width: 1260px)
+      margin-bottom: 0px
       width: 100%
+
+  &__footer
+    display: flex    
+    flex-wrap: wrap
+    @media (max-width: 900px)
+      justify-content: center
 
   h3
     margin-bottom: 40px
 
   a 
-    color: $link-color
-    border: 1px solid $pink
-    padding: 8px 12px
+    flex-basis: 200px
+    color: $blue
+    border: 2px solid $blue
+    padding: 14px 20px
     font-weight: 700
     font-size: 1.2rem
     text-decoration: none
-    margin-right: 16px
+    text-align: center
+    margin-right: 24px
     transition: background .3s ease-in-out
-    
+    @media (max-width: 900px)
+      flex-basis: 100%
+      margin: 10px
+
     &:hover 
       background: $pink
       color: #FFF
   p 
     margin-bottom: 50px
+    @media (max-width: 900px)
+      margin-bottom: 24px
   
   @media (max-width: 1260px)
     margin-top: 26px

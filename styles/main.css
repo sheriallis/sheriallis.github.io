@@ -367,10 +367,6 @@ section .container {
   }
 }
 
-h2 {
-  padding-bottom: 0.8em;
-}
-
 html, .root {
   font-size: 16px;
 }
@@ -401,13 +397,11 @@ h2 {
   font-size: 2.4rem;
   line-height: 3.8333333rem;
   margin-top: 1.2777778rem;
-  margin-bottom: 1.2777778rem;
 }
 
 h3 {
   font-size: 1.6111111rem;
   line-height: 2.5555556rem;
-  margin-top: 1.2777778rem;
   margin-bottom: 0rem;
 }
 
@@ -541,7 +535,12 @@ h1 {
 .project {
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+}
+@media (max-width: 900px) {
+  .project {
+    margin-bottom: 0;
+  }
 }
 .project__info {
   width: 80%;
@@ -558,21 +557,39 @@ h1 {
 }
 @media (max-width: 1260px) {
   .project__preview {
+    margin-bottom: 0px;
     width: 100%;
+  }
+}
+.project__footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 900px) {
+  .project__footer {
+    justify-content: center;
   }
 }
 .project h3 {
   margin-bottom: 40px;
 }
 .project a {
-  color: #F96565;
-  border: 1px solid #F46778;
-  padding: 8px 12px;
+  flex-basis: 200px;
+  color: #4A8FE0;
+  border: 2px solid #4A8FE0;
+  padding: 14px 20px;
   font-weight: 700;
   font-size: 1.2rem;
   text-decoration: none;
-  margin-right: 16px;
+  text-align: center;
+  margin-right: 24px;
   transition: background 0.3s ease-in-out;
+}
+@media (max-width: 900px) {
+  .project a {
+    flex-basis: 100%;
+    margin: 10px;
+  }
 }
 .project a:hover {
   background: #F46778;
@@ -580,6 +597,11 @@ h1 {
 }
 .project p {
   margin-bottom: 50px;
+}
+@media (max-width: 900px) {
+  .project p {
+    margin-bottom: 24px;
+  }
 }
 @media (max-width: 1260px) {
   .project {
@@ -610,6 +632,12 @@ h1 {
   width: 250px;
   box-shadow: 25px 25px 0px rgba(0, 0, 0, 0.05);
 }
+@media (max-width: 900px) {
+  .about__img {
+    box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+  }
+}
 
 .about__info {
   padding: 4em;
@@ -638,9 +666,19 @@ h1 {
   align-items: center;
   width: 40%;
 }
+.service__item--svg {
+  height: 200px;
+  width: 200px;
+}
+@media (max-width: 900px) {
+  .service__item--svg {
+    height: 150px;
+    width: 150px;
+  }
+}
 @media (max-width: 900px) {
   .service__item {
-    margin-bottom: 24px;
+    margin: 24px 0;
     width: 90%;
   }
 }
