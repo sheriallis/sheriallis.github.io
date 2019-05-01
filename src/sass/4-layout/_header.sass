@@ -17,6 +17,8 @@ header
     align-items: center
     width: 80%
     max-width: 1300px
+    @media (max-width: 900px)
+      width: 100%
 
   nav
     a
@@ -26,11 +28,16 @@ header
       padding: 26px
       border-bottom: 6px solid $pink
       &:hover
-        background: $purple
+        background-color: $purple
         border-bottom: 6px solid $pink
+      &:active
+        background-color: $pink
+
 
     ul 
       margin: 0
       padding: 0
+      display: flex
+      list-style: none
       li 
-        display: inline-block
+        flex-basis: 200px
